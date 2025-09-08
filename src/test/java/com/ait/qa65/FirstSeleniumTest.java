@@ -40,4 +40,5 @@ WebDriver driver;
 //        driver.quit(); // all tabs and browser (он закрывает все вкладки и браузер)
         driver.close(); // only ona tab (if only one -> close browser) текущая
     }
+
 }
