@@ -16,20 +16,21 @@ public class FindElementTests {
 
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         driver = new ChromeDriver();
         driver.get("https://icarro-v1.netlify.app");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
+
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 
     @Test
-    public void findElementByTagName(){
+    public void findElementByTagName() {
         //find element by tag name
         WebElement element = driver.findElement(By.tagName("h1"));
         System.out.println(element.getText());
@@ -43,16 +44,43 @@ public class FindElementTests {
 
 
     }
-@Test
-    public void sampleElementBySimpleLocators(){
-    //find element by id
-    driver.findElement(By.id("root"));
-    //by className
-    driver.findElement(By.className("header"));
-    //by linkText
-    driver.findElement(By.linkText("Let car work"));
-    //by partial link text
-    driver.findElement(By.partialLinkText("Let"));
 
-}
+    @Test
+    public void sampleElementBySimpleLocators() {
+        //find element by id
+        driver.findElement(By.id("root"));
+        //by className
+        driver.findElement(By.className("header"));
+        //by linkText
+        driver.findElement(By.linkText("Let car work"));
+        //by partial link text
+        driver.findElement(By.partialLinkText("Let"));
+
+    }
+
+    @Test
+    public void findElementByCssSelectorTest() {
+        //tagName==css(#)
+        //driver.findElement(By.ByTagName("h1"));
+        driver.findElement(By.cssSelector("h1"));
+
+        //id -> css(#)
+        //driver.findElement(By.id("root"));
+        driver.findElement(By.cssSelector("#root"));
+
+        //className -> css(.)
+        //driver.findElement(By.className("header"));
+        driver.findElement(By.className(".header"));
+
+        //[attr='value']
+        driver.findElement(By.cssSelector("[href='/let-car-work']"));
+        //contains ->*
+        driver.findElement(By.cssSelector("[href*='car']"));
+
+        //start->^
+        driver.findElement(By.cssSelector("[href^='/le']"));
+
+        //end ->$
+        driver.findElement(By.cssSelector("[href$='work']"));
+    }
 }
