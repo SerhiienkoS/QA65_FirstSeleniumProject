@@ -9,15 +9,20 @@ import org.testng.annotations.Test;
 
 public class AddContactTests extends TestBase {
 
+    //login
     @BeforeMethod
-    public void precondition() {
+    public void precondition(){
+        if(!app.getUser().isLoginLinkPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setEmail("test123phone$@gmail.com").setPassword("Sergey12#!"));
+        app.getUser().fillRegisterLoginForm(new User().setEmail("manual22@gmail.com").setPassword("Manuel12345$"));
         app.getUser().clickOnLoginButton();
     }
 
     @Test
     public void addContactPositiveTest() {
+
         app.getContact().clickOnAddLink();
         app.getContact().fillContactForm(new Contact()
                 .setName("Sergey")
