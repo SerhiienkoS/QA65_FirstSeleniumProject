@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.AddContactTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-17T09:22:00" hostname="MSI-PC" time="25.154">
+  <properties/>
+  <testcase name="addContactPositiveFromDataProviderTest[0](Petya, Pupkin, 01234567890, Petya@gm.com, Hutoryankova, QA)" classname="com.phonebook.tests.AddContactTests" time="1.869"/>
+  <testcase name="addContactPositiveFromDataProviderTest[1](Vasya, Papkin, 01234567891, Vasya1@gm.com, Hutoryankova, QA)" classname="com.phonebook.tests.AddContactTests" time="1.12"/>
+  <testcase name="addContactPositiveFromDataProviderTest[2](Yuri, Popkin, 0123456789012, Yuri2@gm.com, Hutoryankova, QA)" classname="com.phonebook.tests.AddContactTests" time="1.194"/>
+  <system-out><![CDATA[11:21:59.837 [Test worker] INFO com.phonebook.tests.TestBase -- Start testaddContactPositiveFromDataProviderTest[Petya, Pupkin, 01234567890, Petya@gm.com, Hutoryankova, QA]
+11:22:02.181 [Test worker] INFO com.phonebook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
+11:22:02.181 [Test worker] INFO com.phonebook.tests.TestBase -- Stop test
+11:22:02.181 [Test worker] INFO com.phonebook.tests.TestBase -- ****************************************************************************
+11:22:02.182 [Test worker] INFO com.phonebook.tests.TestBase -- Start testaddContactPositiveFromDataProviderTest[Vasya, Papkin, 01234567891, Vasya1@gm.com, Hutoryankova, QA]
+11:22:13.778 [Test worker] INFO com.phonebook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
+11:22:13.778 [Test worker] INFO com.phonebook.tests.TestBase -- Stop test
+11:22:13.778 [Test worker] INFO com.phonebook.tests.TestBase -- ****************************************************************************
+11:22:13.779 [Test worker] INFO com.phonebook.tests.TestBase -- Start testaddContactPositiveFromDataProviderTest[Yuri, Popkin, 0123456789012, Yuri2@gm.com, Hutoryankova, QA]
+11:22:25.444 [Test worker] INFO com.phonebook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
+11:22:25.444 [Test worker] INFO com.phonebook.tests.TestBase -- Stop test
+11:22:25.444 [Test worker] INFO com.phonebook.tests.TestBase -- ****************************************************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
