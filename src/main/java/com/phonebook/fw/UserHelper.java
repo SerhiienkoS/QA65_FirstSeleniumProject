@@ -4,7 +4,7 @@ import com.phonebook.models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class UserHelper extends BaseHelper{
+public class UserHelper extends BaseHelper {
     public UserHelper(WebDriver driver) {
         super(driver);
     }
@@ -15,7 +15,7 @@ public class UserHelper extends BaseHelper{
 
     public void fillRegisterLoginForm(User user) {
         type(By.name("email"), user.getEmail());
-        type(By.name("password"), user.getPassword());
+        type(By.name("passwor"), user.getPassword());
     }
 
     public void clickOnLoginLink() {

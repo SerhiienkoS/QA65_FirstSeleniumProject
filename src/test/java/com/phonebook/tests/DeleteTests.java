@@ -1,5 +1,6 @@
 package com.phonebook.tests;
 
+import com.phonebook.data.UserData;
 import com.phonebook.models.Contact;
 import com.phonebook.models.User;
 import org.testng.Assert;
@@ -15,8 +16,8 @@ public class DeleteTests extends TestBase{
     }
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User()
-                .setEmail("test123phone$@gmail.com")
-                .setPassword("Sergey12#!"));
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.Password));
         app.getUser().clickOnLoginButton();
         app.getContact().clickOnAddLink();
         app.getContact().fillContactForm(new Contact()

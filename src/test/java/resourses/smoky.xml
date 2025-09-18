@@ -6,10 +6,14 @@
             <class name="com.phonebook.tests.HomePageTests"/>
             <class name="com.phonebook.tests.LoginTests">
                 <methods>
-                    <exclude name=".*Negative"></exclude>
+                    <exclude name=".*Negative.*"></exclude>
                 </methods>
-                    </class>
-            <class name="com.phonebook.tests.AddContactTests"/>
+            </class>
+            <class name="com.phonebook.tests.AddContactTests">
+                <methods>
+                    <exclude name=".*From.*"></exclude>
+                </methods>
+            </class>
             <class name="com.phonebook.tests.DeleteTests"/>
         </classes>
     </test>
